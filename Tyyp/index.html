@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天翼账号登录</title>
+</head>
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+        overflow: hidden;
+    }
+    .login {
+        width: 100%;
+        min-height: 1080px;
+        box-sizing: border-box;
+        padding-top: 20px;
+        background: url(./bg.png)no-repeat;
+        background-size: 100%;
+    }
+    .head {
+        width: 464px;
+        height: 59px;
+        margin: 0px auto;
+        line-height: 60px;
+        background: url(./head.png)no-repeat;
+        background-size: 100%;
+    }
+    .center {
+        display: flex;
+        margin:30vh auto;
+        justify-content: center;
+    }
+    .pop {
+        width: 374px;
+        height: 270px;
+        background: url(./pop.png)no-repeat;
+        background-size: 100%;
+    }
+    .cont-login {
+        margin-top: -30px;
+        margin-left: 140px;
+        padding: 15px;
+        background: url(./border.png)no-repeat;
+        background-size: 100%;
+        width: 320px;
+        height: 320px;
+        /* margin: auto; */
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+    .bottom {
+        width: 100%;
+        height: 95px;
+        background-color: #50565A;
+        position: absolute;
+        bottom: 0;
+    }
+    .bot {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 400;
+        color: #FFFFFF;
+        margin-top: 20px;
+        line-height: 30px;
+    }
+    .botcont  span  {
+        display: inline-block;
+        width: 60px;
+    }
+    .zxkf {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 120px;
+        height: 42px;
+        background: url(./zxkf.png)no-repeat;
+        background-size: 100%;
+        cursor: pointer;
+    }
+</style>
+<body>
+    <div class="login">
+        <div class="head"></div>
+        <div class="center">
+            <div class="pop"></div>
+            <div class="cont-login">
+                <iframe id="f2" name="f2" src='https://open.e.189.cn/api/logbox/oauth2/web/unifyAccountLogin.do?clientType=10010&appId=9317152152&format=redirect&sign=604B142CDD3683F0CB993BEF4FE2AA772A0109EB&paras=BAA766B4DE5B962D96F8AA8C33D0EE2A7DEA028EF3BA41B9E52C0819E2C38565C8CD4D0F98B4817752BE79682D923A58FF83A3711EF7BCB8BDA415883E8B88B01C3FC2A1DCD15D3BB6C07FB5AE4BCC68CBF1F275&version=v1.5' width="100%" height="100%" target="_self" style="border: none;background-color: rgba(204, 202, 224, 0.6);"></iframe>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="bot">
+                <div class="botcont">
+                    <div>帮助中心 <span></span> 指导单位：上海市教育委员会 <span></span> 主办单位：上海市教师教育学院</div>
+                    <div>上海智慧教育平台（微校云盘）  |      沪ICP备202303215号-2     |             沪公网安备31010902003387号              服务热线：021-9699459</div>
+                </div>
+                <div class="zxkf"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // 计算页面的实际高度，iframe自适应会用到
+        // function  calcPageHeight(doc) {
+        //     var  cHeight = Math.max(doc.body.clientHeight, doc.documentElement.clientHeight)
+        //     var  sHeight = Math.max(doc.body.scrollHeight, doc.documentElement.scrollHeight)
+        //     var  height  = Math.max(cHeight, sHeight)
+        //     return  height
+        // }
+        // window.onload =  function () {
+        //     var  height = calcPageHeight(document)
+        //     parent.document.getElementById( 'f2' ).style.height = height +  'px'     
+        // }
+        // // console.log('llll',parent.document.querySelector( '.login-box' ));
+        // // 获取iframe元素
+        // var iframe = document.getElementById('f2');
+        // // 发送消息到iframe
+        // iframe.contentWindow.postMessage('Hello from parent window!', '*');
+        // // 监听来自iframe的消息
+        // window.addEventListener('message', function(event) {
+        // if (event.origin !== 'http://example.com') return; // 确保消息来自正确的域名
+        //     console.log('Received message from iframe:', event.data);
+        // });
+        // // 监听来自父窗口的消息
+        // window.addEventListener('message', function(event) {
+        // if (event.origin !== 'http://example.com') return; // 确保消息来自正确的域名
+        // console.log('Received message from parent window:', event.data);
+        // });
+   </script>
+</body>
+</html>
